@@ -28,7 +28,6 @@ public class vocabulario extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         jPanel1 = new javax.swing.JPanel();
         jLabelVOCABULARIO = new javax.swing.JLabel();
@@ -150,12 +149,12 @@ public class vocabulario extends javax.swing.JFrame {
 
         jMenuBar1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
 
-        jMenu1.setText("File");
+        jMenu1.setText("CARREGAR");
 
         jMenuItem1.setText("SALVAR");
         jMenu1.add(jMenuItem1);
 
-        jMenuItem2.setText("CAREGAR VOCABULÁRIO");
+        jMenuItem2.setText("CARREGAR VOCABULÁRIO");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
@@ -165,7 +164,7 @@ public class vocabulario extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("AJUDA");
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
