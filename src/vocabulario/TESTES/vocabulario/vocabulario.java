@@ -16,9 +16,10 @@ public class vocabulario extends javax.swing.JFrame {
      */
     public vocabulario() {
         initComponents();
-        jLabelVOCABULARIO.setText("jButton5");
+        geravocabularios();
        
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -278,6 +279,10 @@ public class vocabulario extends javax.swing.JFrame {
 
     
     private void geravocabularios() {
+        
+        jLabelVOCABULARIO.setText("jButton8");
+        
+        
         
     }
 
