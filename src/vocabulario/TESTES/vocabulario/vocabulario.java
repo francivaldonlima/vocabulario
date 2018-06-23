@@ -17,7 +17,7 @@ public class vocabulario extends javax.swing.JFrame {
     public vocabulario() {
         initComponents();
         jLabelVOCABULARIO.setText("jButton5");
-        jLabelVOCABULARIO.setText("jButton5");
+       
     }
 
     /**
@@ -42,8 +42,14 @@ public class vocabulario extends javax.swing.JFrame {
         jButtonPalavra_6 = new javax.swing.JButton();
         jButtonPalavra_7 = new javax.swing.JButton();
         jButtonPalavra_8 = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("VOCABULÁRIO");
         getContentPane().setLayout(new java.awt.GridLayout(2, 1));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(32767, 100));
@@ -68,6 +74,7 @@ public class vocabulario extends javax.swing.JFrame {
         jPanel2.setMinimumSize(new java.awt.Dimension(100, 100));
         jPanel2.setLayout(new java.awt.GridLayout(4, 2, 10, 10));
 
+        jButtonPalavra_1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jButtonPalavra_1.setText("jButton1");
         jButtonPalavra_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,6 +83,7 @@ public class vocabulario extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonPalavra_1);
 
+        jButtonPalavra_2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jButtonPalavra_2.setText("jButton2");
         jButtonPalavra_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,6 +92,7 @@ public class vocabulario extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonPalavra_2);
 
+        jButtonPalavra_3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jButtonPalavra_3.setText("jButton3");
         jButtonPalavra_3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,6 +101,7 @@ public class vocabulario extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonPalavra_3);
 
+        jButtonPalavra_4.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jButtonPalavra_4.setText("jButton4");
         jButtonPalavra_4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,6 +110,7 @@ public class vocabulario extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonPalavra_4);
 
+        jButtonPalavra_5.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jButtonPalavra_5.setText("jButton5");
         jButtonPalavra_5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,6 +119,7 @@ public class vocabulario extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonPalavra_5);
 
+        jButtonPalavra_6.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jButtonPalavra_6.setText("jButton6");
         jButtonPalavra_6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,6 +128,7 @@ public class vocabulario extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonPalavra_6);
 
+        jButtonPalavra_7.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jButtonPalavra_7.setText("jButton7");
         jButtonPalavra_7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,6 +137,7 @@ public class vocabulario extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonPalavra_7);
 
+        jButtonPalavra_8.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jButtonPalavra_8.setText("jButton8");
         jButtonPalavra_8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,7 +148,30 @@ public class vocabulario extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2);
 
+        jMenuBar1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+
+        jMenu1.setText("File");
+
+        jMenuItem1.setText("SALVAR");
+        jMenu1.add(jMenuItem1);
+
+        jMenuItem2.setText("CAREGAR VOCABULÁRIO");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonPalavra_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_1ActionPerformed
@@ -234,6 +271,12 @@ public class vocabulario extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButtonPalavra_8ActionPerformed
 
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+       
+        
+        
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
     
     private void geravocabularios() {
         
@@ -287,6 +330,11 @@ public class vocabulario extends javax.swing.JFrame {
     private javax.swing.JButton jButtonPalavra_8;
     private javax.swing.JLabel jLabelRESPOSTA;
     private javax.swing.JLabel jLabelVOCABULARIO;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
