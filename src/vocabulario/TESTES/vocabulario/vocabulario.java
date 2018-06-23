@@ -5,6 +5,9 @@
  */
 package vocabulario.TESTES.vocabulario;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 /**
  *
  * @author francivaldo do nascimento lima
@@ -14,6 +17,9 @@ public class vocabulario extends javax.swing.JFrame {
     /**
      * Creates new form vocabulario
      */
+    
+   public ArrayList<String> passagem = new ArrayList<String>();
+    
     public vocabulario() {
         initComponents();
         geravocabularios();
@@ -270,6 +276,7 @@ public class vocabulario extends javax.swing.JFrame {
         jLabelVOCABULARIO.setText("jButton8");
         
          ArrayList<String> palavras = new ArrayList();
+         Random sorteia = new Random();
          
          palavras.add("jButton1");
          palavras.add("jButton2");
@@ -280,7 +287,37 @@ public class vocabulario extends javax.swing.JFrame {
          palavras.add("jButton7");
          palavras.add("jButton8");
          
+         int sorteiadas_1 = sorteia.nextInt(8);
+         int sorteiadas_2 = sorteia.nextInt(8);
+         int sorteiadas_3 = sorteia.nextInt(8);
+         int sorteiadas_4 = sorteia.nextInt(8);
+         int sorteiadas_5 = sorteia.nextInt(8);
+         int sorteiadas_6 = sorteia.nextInt(8);
+         int sorteiadas_7 = sorteia.nextInt(8);
+         int sorteiadas_8 = sorteia.nextInt(8);
+         
+          System.out.println(sorteiadas_1);
+          System.out.println(sorteiadas_2);
+          System.out.println(sorteiadas_3);
+          System.out.println(sorteiadas_4);
+          System.out.println(sorteiadas_5);
+          System.out.println(sorteiadas_6);
+          System.out.println(sorteiadas_7);
+          System.out.println(sorteiadas_8);
+         
+         jButtonPalavra_1.setText(palavras.get(sorteiadas_1));
+         jButtonPalavra_2.setText(palavras.get(sorteiadas_2));
+         jButtonPalavra_3.setText(palavras.get(sorteiadas_3));
+         jButtonPalavra_4.setText(palavras.get(sorteiadas_4));
+         jButtonPalavra_5.setText(palavras.get(sorteiadas_5));
+         jButtonPalavra_6.setText(palavras.get(sorteiadas_6));
+         jButtonPalavra_7.setText(palavras.get(sorteiadas_7));
+         jButtonPalavra_8.setText(palavras.get(sorteiadas_7));
+         
+         
+         
 }
+
 
 /**
  * @param args the command line arguments
