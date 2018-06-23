@@ -7,7 +7,7 @@ package vocabulario.TESTES.vocabulario;
 
 /**
  *
- * @author francivaldo
+ * @author francivaldo do nascimento lima
  */
 public class vocabulario extends javax.swing.JFrame {
 
@@ -16,6 +16,7 @@ public class vocabulario extends javax.swing.JFrame {
      */
     public vocabulario() {
         initComponents();
+        jLabelVOCABULARIO.setText("jButton5");
         jLabelVOCABULARIO.setText("jButton5");
     }
 
