@@ -17,9 +17,8 @@ public class vocabulario extends javax.swing.JFrame {
     public vocabulario() {
         initComponents();
         geravocabularios();
-       
+
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -175,111 +174,99 @@ public class vocabulario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonPalavra_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_1ActionPerformed
-       
-        if (jButtonPalavra_1.getText()== jLabelVOCABULARIO.getText())
-        {
+
+        if (jButtonPalavra_1.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_1.setBackground(new java.awt.Color(102, 204, 0));
-            
-        } else{
-            
+
+        } else {
+
             jButtonPalavra_1.setBackground(new java.awt.Color(255, 51, 51));
         }
-        
-       // geravocabularios();
-        
-        
+
+        // geravocabularios();
+
     }//GEN-LAST:event_jButtonPalavra_1ActionPerformed
 
     private void jButtonPalavra_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_2ActionPerformed
-        
-        if (jButtonPalavra_2.getText()== jLabelVOCABULARIO.getText())
-        {
+
+        if (jButtonPalavra_2.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_2.setBackground(new java.awt.Color(102, 204, 0));
-            
-        } else{
-            
+
+        } else {
+
             jButtonPalavra_2.setBackground(new java.awt.Color(255, 51, 51));
         }
-        
-        
-        
+
+
     }//GEN-LAST:event_jButtonPalavra_2ActionPerformed
 
     private void jButtonPalavra_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_3ActionPerformed
-        if (jButtonPalavra_3.getText()== jLabelVOCABULARIO.getText())
-        {
+        if (jButtonPalavra_3.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_3.setBackground(new java.awt.Color(102, 204, 0));
-            
-        } else{
-            
+
+        } else {
+
             jButtonPalavra_3.setBackground(new java.awt.Color(255, 51, 51));
         }
     }//GEN-LAST:event_jButtonPalavra_3ActionPerformed
 
     private void jButtonPalavra_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_4ActionPerformed
-        if (jButtonPalavra_4.getText()== jLabelVOCABULARIO.getText())
-        {
+        if (jButtonPalavra_4.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_4.setBackground(new java.awt.Color(102, 204, 0));
-            
-        } else{
-            
+
+        } else {
+
             jButtonPalavra_4.setBackground(new java.awt.Color(255, 51, 51));
         }
     }//GEN-LAST:event_jButtonPalavra_4ActionPerformed
 
     private void jButtonPalavra_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_5ActionPerformed
-         if (jButtonPalavra_5.getText()== jLabelVOCABULARIO.getText())
-        {
+        if (jButtonPalavra_5.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_5.setBackground(new java.awt.Color(102, 204, 0));
-            
-        } else{
-            
+
+        } else {
+
             jButtonPalavra_5.setBackground(new java.awt.Color(255, 51, 51));
         }
     }//GEN-LAST:event_jButtonPalavra_5ActionPerformed
 
     private void jButtonPalavra_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_6ActionPerformed
-        if (jButtonPalavra_6.getText()== jLabelVOCABULARIO.getText())
-        {
+        if (jButtonPalavra_6.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_6.setBackground(new java.awt.Color(102, 204, 0));
-            
-        } else{
-            
+
+        } else {
+
             jButtonPalavra_6.setBackground(new java.awt.Color(255, 51, 51));
         }
     }//GEN-LAST:event_jButtonPalavra_6ActionPerformed
 
     private void jButtonPalavra_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_7ActionPerformed
-         if (jButtonPalavra_7.getText()== jLabelVOCABULARIO.getText())
-        {
+        if (jButtonPalavra_7.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_7.setBackground(new java.awt.Color(102, 204, 0));
-            
-        } else{
-            
+
+        } else {
+
             jButtonPalavra_7.setBackground(new java.awt.Color(255, 51, 51));
         }
     }//GEN-LAST:event_jButtonPalavra_7ActionPerformed
 
     private void jButtonPalavra_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_8ActionPerformed
-        if (jButtonPalavra_8.getText()== jLabelVOCABULARIO.getText())
-        {
+        if (jButtonPalavra_8.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_8.setBackground(new java.awt.Color(102, 204, 0));
-            
-        } else{
-            
+
+        } else {
+
             jButtonPalavra_8.setBackground(new java.awt.Color(255, 51, 51));
         }
     }//GEN-LAST:event_jButtonPalavra_8ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-       
-        
-        
+
+
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    
-    private void geravocabularios() {
-        
+      private void geravocabularios() {
+          
         jLabelVOCABULARIO.setText("jButton8");
         
          ArrayList<String> palavras = new ArrayList();
@@ -293,17 +280,12 @@ public class vocabulario extends javax.swing.JFrame {
          palavras.add("jButton7");
          palavras.add("jButton8");
          
-        
-        
-        
-    }
+}
 
-    
-    
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
+/**
+ * @param args the command line arguments
+ */
+public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -314,16 +296,28 @@ public class vocabulario extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
-                }
+                
+
+}
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(vocabulario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(vocabulario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(vocabulario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(vocabulario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(vocabulario.class
+.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        
+
+} catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(vocabulario.class
+.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        
+
+} catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(vocabulario.class
+.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        
+
+} catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(vocabulario.class
+.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
