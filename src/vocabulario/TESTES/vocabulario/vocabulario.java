@@ -282,6 +282,18 @@ public class vocabulario extends javax.swing.JFrame {
         
         jLabelVOCABULARIO.setText("jButton8");
         
+         ArrayList<String> palavras = new ArrayList();
+         
+         palavras.add("jButton1");
+         palavras.add("jButton2");
+         palavras.add("jButton3");
+         palavras.add("jButton4");
+         palavras.add("jButton5");
+         palavras.add("jButton6");
+         palavras.add("jButton7");
+         palavras.add("jButton8");
+         
+        
         
         
     }
