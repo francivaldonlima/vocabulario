@@ -6,7 +6,10 @@
 package vocabulario.TESTES.vocabulario;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  *
@@ -19,6 +22,10 @@ public class vocabulario extends javax.swing.JFrame {
      */
     
    public ArrayList<String> passagem = new ArrayList<String>();
+   
+   private int x;
+   private int tamanho;
+   private int n;
     
     public vocabulario() {
         initComponents();
@@ -79,6 +86,7 @@ public class vocabulario extends javax.swing.JFrame {
         jPanel2.setMinimumSize(new java.awt.Dimension(100, 100));
         jPanel2.setLayout(new java.awt.GridLayout(4, 2, 10, 10));
 
+        jButtonPalavra_1.setBackground(new java.awt.Color(153, 255, 255));
         jButtonPalavra_1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jButtonPalavra_1.setText("jButton1");
         jButtonPalavra_1.addActionListener(new java.awt.event.ActionListener() {
@@ -183,10 +191,11 @@ public class vocabulario extends javax.swing.JFrame {
 
         if (jButtonPalavra_1.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_1.setBackground(new java.awt.Color(102, 204, 0));
-
+            geravocabularios();
         } else {
 
             jButtonPalavra_1.setBackground(new java.awt.Color(255, 51, 51));
+            
         }
 
         // geravocabularios();
@@ -197,10 +206,12 @@ public class vocabulario extends javax.swing.JFrame {
 
         if (jButtonPalavra_2.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_2.setBackground(new java.awt.Color(102, 204, 0));
+            geravocabularios();
 
         } else {
 
             jButtonPalavra_2.setBackground(new java.awt.Color(255, 51, 51));
+            
         }
 
 
@@ -209,60 +220,72 @@ public class vocabulario extends javax.swing.JFrame {
     private void jButtonPalavra_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_3ActionPerformed
         if (jButtonPalavra_3.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_3.setBackground(new java.awt.Color(102, 204, 0));
+            geravocabularios();
 
         } else {
 
             jButtonPalavra_3.setBackground(new java.awt.Color(255, 51, 51));
+            
         }
     }//GEN-LAST:event_jButtonPalavra_3ActionPerformed
 
     private void jButtonPalavra_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_4ActionPerformed
         if (jButtonPalavra_4.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_4.setBackground(new java.awt.Color(102, 204, 0));
+            geravocabularios();
 
         } else {
 
             jButtonPalavra_4.setBackground(new java.awt.Color(255, 51, 51));
+            
         }
     }//GEN-LAST:event_jButtonPalavra_4ActionPerformed
 
     private void jButtonPalavra_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_5ActionPerformed
         if (jButtonPalavra_5.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_5.setBackground(new java.awt.Color(102, 204, 0));
+            geravocabularios();
 
         } else {
 
             jButtonPalavra_5.setBackground(new java.awt.Color(255, 51, 51));
+            
         }
     }//GEN-LAST:event_jButtonPalavra_5ActionPerformed
 
     private void jButtonPalavra_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_6ActionPerformed
         if (jButtonPalavra_6.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_6.setBackground(new java.awt.Color(102, 204, 0));
+            geravocabularios();
 
         } else {
 
             jButtonPalavra_6.setBackground(new java.awt.Color(255, 51, 51));
+            
         }
     }//GEN-LAST:event_jButtonPalavra_6ActionPerformed
 
     private void jButtonPalavra_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_7ActionPerformed
         if (jButtonPalavra_7.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_7.setBackground(new java.awt.Color(102, 204, 0));
+            geravocabularios();
 
         } else {
 
             jButtonPalavra_7.setBackground(new java.awt.Color(255, 51, 51));
+            
         }
     }//GEN-LAST:event_jButtonPalavra_7ActionPerformed
 
     private void jButtonPalavra_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPalavra_8ActionPerformed
         if (jButtonPalavra_8.getText() == jLabelVOCABULARIO.getText()) {
             jButtonPalavra_8.setBackground(new java.awt.Color(102, 204, 0));
+            geravocabularios();
 
         } else {
 
             jButtonPalavra_8.setBackground(new java.awt.Color(255, 51, 51));
+            
         }
     }//GEN-LAST:event_jButtonPalavra_8ActionPerformed
 
@@ -273,7 +296,20 @@ public class vocabulario extends javax.swing.JFrame {
 
       private void geravocabularios() {
           
-        jLabelVOCABULARIO.setText("jButton8");
+          SortedSet<Integer> sorteio = new TreeSet<Integer>();
+
+        while (tamanho<= 5) {
+
+            n = (int) Math.round(Math.random() * 10);
+            sorteio.add(n);
+
+            tamanho = sorteio.size();
+        }  
+        x=0;
+        tamanho=0;
+        
+          System.out.println(sorteio +" xxxxxxxxxxxx");
+
         
          ArrayList<String> palavras = new ArrayList();
          Random sorteia = new Random();
@@ -285,7 +321,23 @@ public class vocabulario extends javax.swing.JFrame {
          palavras.add("jButton5");
          palavras.add("jButton6");
          palavras.add("jButton7");
-         palavras.add("jButton8");
+         palavras.add("jButtonA");
+         palavras.add("jButtonB");
+         palavras.add("jButtonC");
+         palavras.add("jButtonD");
+         palavras.add("jButtonE");
+         palavras.add("jButtonF");
+         
+         
+         System.out.println(palavras + "11111111111111111111111111111111111");
+         
+         Collections.shuffle(palavras);
+         
+          System.out.println(palavras + " 2222222222222222222222222222222222");
+  
+         
+         
+         
          
          int sorteiadas_1 = sorteia.nextInt(8);
          int sorteiadas_2 = sorteia.nextInt(8);
@@ -296,23 +348,54 @@ public class vocabulario extends javax.swing.JFrame {
          int sorteiadas_7 = sorteia.nextInt(8);
          int sorteiadas_8 = sorteia.nextInt(8);
          
-          System.out.println(sorteiadas_1);
-          System.out.println(sorteiadas_2);
-          System.out.println(sorteiadas_3);
-          System.out.println(sorteiadas_4);
-          System.out.println(sorteiadas_5);
-          System.out.println(sorteiadas_6);
-          System.out.println(sorteiadas_7);
-          System.out.println(sorteiadas_8);
+//          System.out.println(sorteiadas_palavra);
+//          System.out.println(sorteiadas_1);
+//          System.out.println(sorteiadas_2);
+//          System.out.println(sorteiadas_3);
+//          System.out.println(sorteiadas_4);
+//          System.out.println(sorteiadas_5);
+//          System.out.println(sorteiadas_6);
+//          System.out.println(sorteiadas_7);
+//          System.out.println(sorteiadas_8);
+
+
+
+  
+         jLabelVOCABULARIO.setText(palavras.get(sorteiadas_1));
+         jButtonPalavra_1.setText(palavras.get(0));
+         jButtonPalavra_2.setText(palavras.get(1));
+         jButtonPalavra_3.setText(palavras.get(2));
+         jButtonPalavra_4.setText(palavras.get(3));
+         jButtonPalavra_5.setText(palavras.get(4));
+         jButtonPalavra_6.setText(palavras.get(5));
+         jButtonPalavra_7.setText(palavras.get(6));
+         jButtonPalavra_8.setText(palavras.get(7));
+       
+          
+          
+//          
+//         jLabelVOCABULARIO.setText(palavras.get(sorteiadas_1));
+//         jButtonPalavra_1.setText(palavras.get(sorteiadas_1));
+//         jButtonPalavra_2.setText(palavras.get(sorteiadas_2));
+//         jButtonPalavra_3.setText(palavras.get(sorteiadas_3));
+//         jButtonPalavra_4.setText(palavras.get(sorteiadas_4));
+//         jButtonPalavra_5.setText(palavras.get(sorteiadas_5));
+//         jButtonPalavra_6.setText(palavras.get(sorteiadas_6));
+//         jButtonPalavra_7.setText(palavras.get(sorteiadas_7));
+//         jButtonPalavra_8.setText(palavras.get(sorteiadas_7));
+//         
+//         
          
-         jButtonPalavra_1.setText(palavras.get(sorteiadas_1));
-         jButtonPalavra_2.setText(palavras.get(sorteiadas_2));
-         jButtonPalavra_3.setText(palavras.get(sorteiadas_3));
-         jButtonPalavra_4.setText(palavras.get(sorteiadas_4));
-         jButtonPalavra_5.setText(palavras.get(sorteiadas_5));
-         jButtonPalavra_6.setText(palavras.get(sorteiadas_6));
-         jButtonPalavra_7.setText(palavras.get(sorteiadas_7));
-         jButtonPalavra_8.setText(palavras.get(sorteiadas_7));
+         jButtonPalavra_1.setBackground(new java.awt.Color(153, 255, 255));
+         jButtonPalavra_2.setBackground(new java.awt.Color(153, 255, 255));
+         jButtonPalavra_3.setBackground(new java.awt.Color(153, 255, 255));
+         jButtonPalavra_4.setBackground(new java.awt.Color(153, 255, 255));
+         jButtonPalavra_5.setBackground(new java.awt.Color(153, 255, 255));
+         jButtonPalavra_6.setBackground(new java.awt.Color(153, 255, 255));
+         jButtonPalavra_7.setBackground(new java.awt.Color(153, 255, 255));
+         jButtonPalavra_8.setBackground(new java.awt.Color(153, 255, 255));
+         
+        // sorteio.clear();
          
          
          
